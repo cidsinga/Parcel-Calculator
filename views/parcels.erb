@@ -1,0 +1,13 @@
+<h1>Add Shipping Info</h1>
+
+<% if @parcels.any? %>
+<ul>
+  <% @parcels.each do |parcel| %>
+  <li><a href="/parcels/<%= parcel.id %>"> volume:<%= parcel.volume %> $<%= parcel.cost %></a></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are currently no parcels to calculate.</p>
+<% end %>
+
+<a href="/parcels/new">Add a new parcel!</a>

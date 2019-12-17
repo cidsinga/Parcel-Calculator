@@ -1,0 +1,12 @@
+<h4>Parcel Info: <%= @parcels.id %></h4>
+
+<ul>
+<li><%=@parcels.weight%></li>
+<li><%=@parcels.volume%></li>
+<li><%=@parcels.ship%></li>
+<li><%= @parcels.cost%></li>
+</ul>
+
+
+<p><a href="/parcels/<%= @parcels.id %>/edit">Edit parcel</a></p>
+<a href="/parcels">Return to album list</a>
